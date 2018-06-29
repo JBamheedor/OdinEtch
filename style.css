@@ -1,0 +1,100 @@
+.buttons {
+    margin-top: 40px;
+}
+h1{
+    font-family: 'Pacifico', cursive;
+    color: #DAA520;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2em;
+}
+a {
+    font-family: 'Pacifico', cursive;  
+}
+.gridRow, .etch, .buttons{
+    display: flex;
+}
+.etch, .buttons{
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    width: 500px;
+    height: 500px;
+    border: 5px inset grey;
+    font-size: 0;
+    overflow: hidden;
+    border-radius: 25px;
+    background: #efefef;
+}
+.etch {
+    height: 650px;
+    width: 650px;
+    background: #a80808;
+    border: 15px outset #a80808;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px #dbdbdb;
+    margin: 0 auto;
+    position: relative;
+}
+.dot {
+    height: 75px;
+    width: 75px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    box-shadow: 5px -5px  rgba(0,0,0,0.6);
+	-moz-box-shadow: 5px -5px  rgba(0,0,0,0.6);
+	-webkit-box-shadow: 5px -5px  rgba(0,0,0,0.6);
+	-o-box-shadow: 5px -5px  rgba(0,0,0,0.6);
+	border-radius:100px;
+   
+    }
+#right {
+    bottom: 5px;
+    right: 5px;
+}
+#left {
+    bottom: 5px;
+    left: 5px;
+}
+
+#refresh, #randomBtn {
+    height: 75px;
+    width: 75px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    color: black;
+    background: transparent;
+    /* width: 100%;
+    margin-top: 20%; */
+}
+/* Standard syntax */
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+  
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+  .apply-shake {
+      animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  }
