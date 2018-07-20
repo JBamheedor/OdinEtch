@@ -3,9 +3,8 @@ const etch = document.querySelector('.etch');
 const gridRow = document.createElement('div');
 const resizeBtn = document.getElementById('refresh');
 const randomBtn = document.getElementById('randomBtn');
-let gridSize = 30;
-gridMeasuremnt = 500/gridSize;
-let random = false;
+var gridSize = 30;
+var random = false;
 
 //Creating grid
 function createGrid() {
